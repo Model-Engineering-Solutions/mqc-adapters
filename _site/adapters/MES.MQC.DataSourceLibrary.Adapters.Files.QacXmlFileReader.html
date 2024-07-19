@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class QacXmlFileReader | MES Quality Commander - Adapters </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class QacXmlFileReader | MES Quality Commander - Adapters ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MES Quality Commander">
+            MES Quality Commander
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader">
+
+
+
+  <h1 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader" class="text-break">
+Class QacXmlFileReader  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MES.html">MES</a>.<a class="xref" href="MES.MQC.html">MQC</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.html">DataSourceLibrary</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.html">Adapters</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Files.html">Files</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MES.MQC.DataSourceLibrary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QacXmlFileReader : FileReader</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html">AdapterBase</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html">FileReader</a></div>
+      <div><span class="xref">QacXmlFileReader</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_Priority">FileReader.Priority</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_HumanReadableFileCount">FileReader.HumanReadableFileCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_HumanReadableFileExtensions">FileReader.HumanReadableFileExtensions</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_HumanReadableStartFileNames">FileReader.HumanReadableStartFileNames</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_ReportDateTimeExpected">FileReader.ReportDateTimeExpected</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_ReadWithHumanReadableFiles_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterReadResult_System_Collections_Generic_IEnumerable_System_String__">FileReader.ReadWithHumanReadableFiles(FileReaderContext, AdapterReadResult, IEnumerable&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_GetHumanReadableFilePaths_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_">FileReader.GetHumanReadableFilePaths(FileReaderContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_Validate_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_">FileReader.Validate(FileReaderContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html#MES_MQC_DataSourceLibrary_Adapters_FileReader_Execute_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_System_Boolean_">FileReader.Execute(FileReaderContext, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Options">AdapterBase.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToValue_System_String_">AdapterBase.TransformStringToValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_System_String_">AdapterBase.TransformStringToDateTime(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_MES_MQC_DataSourceLibrary_Adapters_AdapterContext_System_String_">AdapterBase.TransformStringToDateTime(AdapterContext, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ThrowWarningForEmptyDataProperty_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterDataBase_MES_MQC_DataSourceLibrary_Adapters_AdapterContextBase_System_String_System_String_">AdapterBase.ThrowWarningForEmptyDataProperty(AdapterDataBase, AdapterContextBase, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ReadFilePathsInZipFile_System_String_">AdapterBase.ReadFilePathsInZipFile(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_DataSource_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.DataSource*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_DataSource" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.DataSource">
+  DataSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Data Source of the Adapter.
+If a report file contains data from multiple data sources, this property has to be to &quot;Unknown&quot; and
+the DataSource of each AdapterData object has to be defined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DataSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_Description_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.Description*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_Description" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.Description">
+  Description
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Description of the Adapter that is visible in the Adapter Dialog as a popover.
+If the adapter is an API Connector, the description is also shown in the Add/Edit DataSource dialog,
+when the API Connector is selected.
+Absolute links get transformed into HTML Link Tags,
+line breaks (\n) get transformed into HTML line breaks (&lt;br&gt;),
+HTML tags are not allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Description { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_FileExtensions_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.FileExtensions*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_FileExtensions" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.FileExtensions">
+  FileExtensions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>File Extensions of the Adapter.
+This property has to be defined and must have at least one file extension.
+The Adapter is only used for FilePaths with the defined file extensions.
+The IsValid method is not called unless the file extension matches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override List&lt;string&gt; FileExtensions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_Name_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.Name*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_Name" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unique Name of the Adapter.
+Defaults to the ClassName (without Adapter / FileReader / ApiConnector suffix),
+can be overridden with a user defined Name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_GetHumanReadableFilePath_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.GetHumanReadableFilePath*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_GetHumanReadableFilePath_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.GetHumanReadableFilePath(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
+  GetHumanReadableFilePath(FileReaderContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the human-readable file path.
+Can be overridden with a user defined function.
+Can be used together with GetHumanReadableFilePaths,
+but it is recommended to only use one of the methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetHumanReadableFilePath(FileReaderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dd><p>FileReaderContext</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Human readable file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_IsValid_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.IsValid*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_IsValid_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.IsValid(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
+  IsValid(FileReaderContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Check if the file name is equal to 'results_data.xml'
+and check if the root element is equal to 'AnalysisData'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsValid(FileReaderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dd><p>Context of file</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if file is a valid QAC XML report file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_Read_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.Read*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_Read_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Files.QacXmlFileReader.Read(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
+  Read(FileReaderContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Read each 'File' element inside &lt;dataroot type=&quot;per-file&quot;&gt; and fetch 'path' attribute as ArtifactPath
+if there is 'File' element with same 'path' attribute inside
+&lt;dataroot type=&quot;project&quot;&gt;
+&lt;tree type=&quot;files&quot;&gt;
+and fetch 'basename' attribute as ArtifactName.
+For each Artifact these measures should be read : Guidelines, Findings
+Measures should be read for different measurements per artifact. The measurement name is taken from
+the attribute 'name' of each
+&lt;tree type=&quot;rules&quot;&gt;
+&lt;RuleGroup name = &quot;xxx&quot;&gt;
+MeasureName: Guidelines
+From 'Rule' elements inside &lt;dataroot type=&quot;project&quot;&gt; &lt;tree type=&quot;rules&quot;&gt; &lt;RuleGroup name = &quot;xxx&quot;&gt;
+read number of 'Rule' elements that has 'Message' elements as child element as value of 'Total' variable
+From 'Rule' elements inside &lt;dataroot type=&quot;per-file&quot;&gt; &lt;File path=&quot;.../example.h&quot;&gt; &lt;tree type=&quot;rules&quot;&gt; &lt;RuleGroup name = &quot;xxx&quot;&gt;
+read number of 'Rule' elements that has 'Message' elements as child element and active=&quot;0&quot; as value of 'Suppressed' variable
+read number of all 'Rule' elements that has 'Message' elements as child element minus value of 'Suppressed' as value of 'Failed' variable
+calculate value of 'Total' minus value of 'Failed' as value of 'Passed' variable
+All above measures read for measurement = 'name' attribute of 'RuleGroup'
+Note: Guidelines.Passed contains Guidelines.Suppressed
+MeasureName: Findings
+From 'Rule' elements inside &lt;dataroot type=&quot;per-file&quot;&gt; &lt;File path=&quot;.../example.h&quot;&gt; &lt;tree type=&quot;rules&quot;&gt; &lt;RuleGroup name = &quot;xxx&quot;&gt;
+read 'active' attribute as value of 'Failed' variable
+read 'total' attribute minus value of 'Failed' as value of 'Suppressed' variable
+All above measures read for measurement = 'name' attribute of 'RuleGroup'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override AdapterReadResult Read(FileReaderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dd><p>Context of file</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterReadResult.html">AdapterReadResult</a></dt>
+    <dd><p>All Data is stored in an AdapterData Model object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MES_MQC_DataSourceLibrary_Adapters_Files_QacXmlFileReader_Read_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext__examples">Examples</h4>
+  <dataroot type="project">
+  <tree type="rules">
+    <rulegroup name="xxx" total="5212" active="1112">
+      <rule id="" total="5" active="2" text="">
+        <rule id="" total="2" active="2" text="">
+          <message guid="" total="2" active="2" text=""></message>
+        </rule>
+      </rule>
+      <rule id="" total="3" active="0" text="">
+        <rule id="" total="3" active="0" text="">
+          <message guid="" total="1" active="0" text=""></message>
+          <message guid="" total="2" active="0" text=""></message>
+        </rule>
+      </rule>
+      <rule id="" total="1" active="1" text="">
+        <rule id="" total="1" active="1" text="">
+          <message guid="" total="1" active="1" text=""></message>
+        </rule>
+      </rule>
+    </rulegroup>
+  </tree>
+</dataroot> =&gt;  Guidelines.Total = 3 for MeasurementName 'xxx'
+ <dataroot type="per-file"><file path=".../example.h"> =&gt; ArtifactPath = '.../example.h' , ArtifactName = 'example.h'
+    <tree type="rules"><rulegroup name="xxx" total="7" active="4"> =&gt; Findings.Failed = 4 , Findings.Suppressed = 3 for MeasurementName 'xxx'
+      <rule id="xxx" total="4" active="4" text="typedefs that indicate ..."><message guid="qac-9.3.1-0602" total="4" active="4" text=""></message></rule><rule id="xxx" total="1" active="0" text="#undef should not be used"><message guid="qac-9.9.0-0841" total="1" active="0" text=""></message></rule><rule id="xxx" total="2" active="0" text="A cast shall not be performed ..."><message guid="qac-9.9.0-0310" total="2" active="0" text=""></message></rule></rulegroup> =&gt; Guidelines.Failed = 1 , Guidelines.Suppressed = 2, Guidelines.Passed = 2 for MeasurementName 'xxx'
+    </tree></file></dataroot>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

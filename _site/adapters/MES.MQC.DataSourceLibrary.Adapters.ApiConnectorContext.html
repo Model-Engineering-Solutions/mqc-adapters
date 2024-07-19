@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ApiConnectorContext | MES Quality Commander - Adapters </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ApiConnectorContext | MES Quality Commander - Adapters ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MES Quality Commander">
+            MES Quality Commander
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext">
+
+
+
+  <h1 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext" class="text-break">
+Class ApiConnectorContext  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MES.html">MES</a>.<a class="xref" href="MES.MQC.html">MQC</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.html">DataSourceLibrary</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.html">Adapters</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MES.MQC.DataSourceLibrary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApiConnectorContext : AdapterContextBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterContextBase.html">AdapterContextBase</a></div>
+      <div><span class="xref">ApiConnectorContext</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterContextBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterContextBase_ImportFindings">AdapterContextBase.ImportFindings</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterContextBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterContextBase_MessageBag">AdapterContextBase.MessageBag</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext__ctor_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.#ctor*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext__ctor_MES_MQC_DataSourceLibrary_Models_Adapters_ApiConnectorConfiguration_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Action_System_Action_System_Int64__System_Action_System_String_System_Action__System_Func_System_String_System_Int32_System_String_System_IDisposable__" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.#ctor(MES.MQC.DataSourceLibrary.Models.Adapters.ApiConnectorConfiguration,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Action,System.Action{System.Int64},System.Action{System.String,System.Action},System.Func{System.String,System.Int32,System.String,System.IDisposable})">
+  ApiConnectorContext(ApiConnectorConfiguration, string, DateTime?, DateTime?, DateTime?, Action, Action&lt;long&gt;, Action&lt;string, Action&gt;, Func&lt;string, int, string, IDisposable&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiConnectorContext(ApiConnectorConfiguration configuration, string appDataPath, DateTime? projectStartDate = null, DateTime? projectEndDate = null, DateTime? lastImportDate = null, Action progressCheckCancel = null, Action&lt;long&gt; progressTryReport = null, Action&lt;string, Action&gt; progressExecuteSubtask = null, Func&lt;string, int, string, IDisposable&gt; progressBeginSubtask = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configuration</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.ApiConnectorConfiguration.html">ApiConnectorConfiguration</a></dt>
+    <dd></dd>
+    <dt><code>appDataPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>projectStartDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>projectEndDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>lastImportDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+    <dt><code>progressCheckCancel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>progressTryReport</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>progressExecuteSubtask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>progressBeginSubtask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_Configuration_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.Configuration*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_Configuration" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.Configuration">
+  Configuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configuration of the API DataSource.
+Has to be cast to the specific Configuration class of the Adapter:</p>
+<pre><code class="lang-csharp">Configuration is AdapterConfiguration configuration</code></pre>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiConnectorConfiguration Configuration { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.ApiConnectorConfiguration.html">ApiConnectorConfiguration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_DownloadPath_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.DownloadPath*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_DownloadPath" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.DownloadPath">
+  DownloadPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The DownloadPath is a cache-directory, where files have to be saved into in the Download-method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DownloadPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_LastImportDate_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.LastImportDate*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_LastImportDate" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.LastImportDate">
+  LastImportDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Date of the last import, if there was any.
+Set by the last execution in AdapterReadResult.DateTime and/or AdapterDownloadResult.DateTime.
+The Adapter should only read data / download files that are newer than the last import date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? LastImportDate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ProjectEndDate_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ProjectEndDate*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ProjectEndDate" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ProjectEndDate">
+  ProjectEndDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configured end date of the project.
+Can be used to filter out data / files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? ProjectEndDate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ProjectStartDate_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ProjectStartDate*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ProjectStartDate" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ProjectStartDate">
+  ProjectStartDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configured start date of the project.
+Can be used to filter out data / files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? ProjectStartDate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_BeginTask_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.BeginTask*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_BeginTask_System_String_System_Int32_System_String_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.BeginTask(System.String,System.Int32,System.String)">
+  BeginTask(string, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>BeginTask is a Utility method.
+Create a task that reports it's steps.
+A task shows up in the dialog of the frontend.
+If the total number is not known, the counter can be set to a arbitrary number
+and only {0} used in the description.</p>
+<p>Example:</p>
+<pre><code class="lang-csharp">// {0} = current item number, {1} = total number of items
+using (context.BeginSubtask("Title", items.Length, "{0} of {1}"))
+{
+  foreach (var item in items)
+  {
+    // increase the task counter {0}
+    context.ReportProgressForTask();
+    // do something
+  }
+}</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable BeginTask(string title, int counter, string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Title of the task.</p>
+</dd>
+    <dt><code>counter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Total number to be counted.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Description with {0} and/or {1} to show the steps/total.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd><p>IDisposable, as long as it is not disposed the tasks runs</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_CheckCancel_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.CheckCancel*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_CheckCancel" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.CheckCancel">
+  CheckCancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>CheckCancel is a Utility method.
+Should be used in loops of long running operations.
+If the import was cancelled by the user, this method stops the execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ExecuteTask_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ExecuteTask*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ExecuteTask_System_String_System_Action_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ExecuteTask(System.String,System.Action)">
+  ExecuteTask(string, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ExecuteTask is a Utility method.
+Create a task that executes a action.
+A task shows up in the dialog of the frontend.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteTask(string title, Action action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Title of the task.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>Action to be executed within the task.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ReportProgressForTask_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ReportProgressForTask*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_ReportProgressForTask_System_Int64_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.ReportProgressForTask(System.Int64)">
+  ReportProgressForTask(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ReportProgressForTask is a Utility method.
+Increase the progress counter {0}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportProgressForTask(long amount = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>Amount to report progress for the task</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
