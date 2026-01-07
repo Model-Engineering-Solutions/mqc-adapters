@@ -44,6 +44,12 @@
       <Reference Include="MES.MQC.DataSourceLibrary">
         <HintPath>deps\MES.MQC.DataSourceLibrary.dll</HintPath>
       </Reference>
+      <Reference Include="MES.MQC.ExportLibrary">
+        <HintPath>deps\MES.MQC.ExportLibrary.dll</HintPath>
+      </Reference>
+      <Reference Include="MES.MQC.FactLayerLibrary">
+        <HintPath>deps\MES.MQC.FactLayerLibrary.dll</HintPath>
+      </Reference>
       <Reference Include="MES.MQC.UtilityLibrary">
         <HintPath>deps\MES.MQC.UtilityLibrary.dll</HintPath>
       </Reference>

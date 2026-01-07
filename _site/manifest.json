@@ -3652,6 +3652,666 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Contents.QualityFileExportInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Contents.QualityFileExportInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Contents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Contents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.ArtifactStructureAugmenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.ArtifactStructureAugmenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.DiffBaseAugmenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.DiffBaseAugmenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.MilestoneSetAugmenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.MilestoneSetAugmenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.QualityStructureAugmenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.QualityStructureAugmenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Augmenters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Format.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Format.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Output.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.Output.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.QualityFileDestinationExportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.QualityFileDestinationExportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.QualityFileSourceExportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.QualityFileSourceExportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.SubForms.Diff.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.SubForms.Diff.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.SubForms.Rounding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.SubForms.Rounding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.SubForms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.SubForms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.Forms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.QualityFileExportConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.QualityFileExportConnector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.Export.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.ExportConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.ExportConnector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Adapters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Context.ExportConnectorContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Context.ExportConnectorContext-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Context.ExportConnectorContext-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Context.ExportConnectorContext-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Context.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Context.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnector-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnector-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnectorWithDownload-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnectorWithDownload-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnectorWithDownload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.IExportConnectorWithDownload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Connectors.ExportInfoBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Connectors.ExportInfoBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Connectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Connectors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.AugmenterBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.AugmenterBase-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.DateFromAugmenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.DateFromAugmenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.DateToAugmenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.DateToAugmenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.ScheduleAugmenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.ScheduleAugmenter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.Augmenters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.ExportForm-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.ExportForm-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.ExportForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.ExportForm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.ExportTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.ExportTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.DateFromFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.DateFromFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.DateToFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.DateToFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.ExportSchedule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.ExportSchedule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.ExportScheduleFrequency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.ExportScheduleFrequency.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.TimeUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.TimeUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.SubForms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Forms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Settings.ExportConnectorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Settings.ExportConnectorSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Settings.ExportSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Settings.ExportSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.ExportLibrary.Models.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.ExportLibrary.Models.Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.IFactLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.IFactLayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Configuration.Milestone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Configuration.Milestone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityFilterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityFilterType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityRevisionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityRevisionFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityRevisionFilterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.QualityRevisionFilterType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Filters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Item.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.Artifact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.Artifact.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.QualityProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.QualityProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.Revision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.Revision.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.Quality.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.IConfigurationRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.IConfigurationRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.IProjectRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.IProjectRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.IQualityRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.IQualityRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.Repositories.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "adapters/MES.MQC.FactLayerLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "adapters/MES.MQC.FactLayerLibrary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "adapters/MES.MQC.UtilityLibrary.Form.Attributes.Field.AssistanceAttributeBase.yml",
       "output": {
         ".html": {
