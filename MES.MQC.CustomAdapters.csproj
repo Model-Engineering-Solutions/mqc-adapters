@@ -34,12 +34,8 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-      <Content Include="ExampleXmlFileReader.py" />
       <Content Include="LICENSE" />
-    </ItemGroup>
-    <ItemGroup>
-      <Compile Include="ExampleApiConnector.cs" />
-      <Compile Include="ExampleXmlFileReader.cs" />
+      <Content Include="XmlFileReader.py" />
     </ItemGroup>
     <ItemGroup>
       <Reference Include="MES.MQC.ConfigurationLibrary">
@@ -94,6 +90,9 @@
     <ItemGroup>
       <None Include="app.config" />
       <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Include="XmlFileReader.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
