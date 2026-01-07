@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GitlabPipelineApiConnector | MES Quality Commander - Adapters </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GitlabPipelineApiConnector | MES Quality Commander - Adapters ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MES Quality Commander">
+            MES Quality Commander
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector">
+
+
+
+  <h1 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector" class="text-break">
+Class GitlabPipelineApiConnector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MES.html">MES</a>.<a class="xref" href="MES.MQC.html">MQC</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.html">DataSourceLibrary</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.html">Adapters</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.html">Apis</a>.<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.html">Gitlab</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MES.MQC.DataSourceLibrary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GitlabPipelineApiConnector : GitlabApiConnectorBase, IDataLocationFileConnector&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, IDataLocationFileConnector, IDataLocationDataConnector&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, IDataLocationConnector&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, IDataLocationDataConnector, IDataLocationConnector, IFormAdapter, IDataLocationPreview&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, IDataLocationPreview</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html">AdapterBase</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html">DataAdapterBase</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.html">ApiConnector</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabApiConnectorBase.html">GitlabApiConnectorBase</a></div>
+      <div><span class="xref">GitlabPipelineApiConnector</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationFileConnector-4.html">IDataLocationFileConnector</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationFileConnector.html">IDataLocationFileConnector</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationDataConnector-4.html">IDataLocationDataConnector</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationConnector-4.html">IDataLocationConnector</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationDataConnector.html">IDataLocationDataConnector</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationConnector.html">IDataLocationConnector</a></div>
+      <div><a class="xref" href="MES.MQC.UtilityLibrary.Form.Interfaces.IFormAdapter.html">IFormAdapter</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationPreview-4.html">IDataLocationPreview</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Interfaces.IDataLocationPreview.html">IDataLocationPreview</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.html#MES_MQC_DataSourceLibrary_Adapters_ApiConnector_DataSource">ApiConnector.DataSource</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.html#MES_MQC_DataSourceLibrary_Adapters_ApiConnector_ExecuteCachedInForm__1_MES_MQC_UtilityLibrary_Form_Interfaces_IFormContext_MES_MQC_UtilityLibrary_Form_Models_Form__System_Object___System_Func___0__">ApiConnector.ExecuteCachedInForm&lt;T&gt;(IFormContext&lt;Form&gt;, object[], Func&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_TransformStringToValue_System_String_">DataAdapterBase.TransformStringToValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_TransformStringToDateTime_System_String_">DataAdapterBase.TransformStringToDateTime(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_ThrowWarningForEmptyDataProperty_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterDataBase_MES_MQC_DataSourceLibrary_Context_ContextBase_System_String_System_String_">DataAdapterBase.ThrowWarningForEmptyDataProperty(AdapterDataBase, ContextBase, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Options">AdapterBase.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_Description_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.Description*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_Description" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.Description">
+  Description
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Description of the Adapter that is visible in the Adapter Dialog as a popover.
+If the adapter is an API Connector, the description is also shown in the Add/Edit DataSource dialog,
+when the API Connector is selected.
+Absolute links get transformed into HTML Link Tags,
+line breaks (\n) get transformed into HTML line breaks (&lt;br&gt;),
+HTML tags are not allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Description { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_Name_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.Name*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_Name" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unique Name of the Adapter.
+Defaults to the ClassName (without Adapter / FileReader / ApiConnector / Connector suffix),
+can be overridden with a user defined Name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_Version_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.Version*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_Version" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.Version">
+  Version
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Version Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.version">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_CheckDataLocationModified_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.CheckDataLocationModified*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_CheckDataLocationModified_MES_MQC_DataSourceLibrary_Context_DataLocationConnectorContext_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Forms_GitlabPipelineDataLocationForm_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineLoadInfo__" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.CheckDataLocationModified(MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo})">
+  CheckDataLocationModified(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckDataLocationModified(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt; context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext-4.html">DataLocationConnectorContext</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_CreatePreview_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.CreatePreview*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_CreatePreview_MES_MQC_DataSourceLibrary_Context_DataLocationConnectorContext_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Forms_GitlabPipelineDataLocationForm_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineLoadInfo__System_String_System_Int32__" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.CreatePreview(MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo},System.String,System.Int32@)">
+  CreatePreview(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, string, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FormPreview[] CreatePreview(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt; context, string preview, out int totalCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext-4.html">DataLocationConnectorContext</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>preview</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>totalCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MES.MQC.UtilityLibrary.Form.Models.FormPreview.html">FormPreview</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetContentStream_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetContentStream*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetContentStream_MES_MQC_DataSourceLibrary_Context_DataLocationConnectorContext_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Forms_GitlabPipelineDataLocationForm_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineLoadInfo__MES_MQC_DataSourceLibrary_Models_Connectors_FileContent_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier__System_String__" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetContentStream(MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo},MES.MQC.DataSourceLibrary.Models.Connectors.FileContent{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier},System.String@)">
+  GetContentStream(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, FileContent&lt;GitlabLocation, GitlabPipelineIdentifier&gt;, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream GetContentStream(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt; context, FileContent&lt;GitlabLocation, GitlabPipelineIdentifier&gt; content, out string error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext-4.html">DataLocationConnectorContext</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.FileContent-2.html">FileContent</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetDataLocationContentData_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetDataLocationContentData*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetDataLocationContentData_MES_MQC_DataSourceLibrary_Context_DataLocationConnectorContext_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Forms_GitlabPipelineDataLocationForm_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineLoadInfo__MES_MQC_DataSourceLibrary_Models_Connectors_DataContent_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier__System_Boolean_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetDataLocationContentData(MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo},MES.MQC.DataSourceLibrary.Models.Connectors.DataContent{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier},System.Boolean)">
+  GetDataLocationContentData(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, DataContent&lt;GitlabLocation, GitlabPipelineIdentifier&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataLocationContentDataResult GetDataLocationContentData(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt; context, DataContent&lt;GitlabLocation, GitlabPipelineIdentifier&gt; content, bool importFindings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext-4.html">DataLocationConnectorContext</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.DataContent-2.html">DataContent</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>importFindings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.DataLocationContentDataResult.html">DataLocationContentDataResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetDataLocationContents_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetDataLocationContents*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetDataLocationContents_MES_MQC_DataSourceLibrary_Context_DataLocationConnectorContext_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Forms_GitlabPipelineDataLocationForm_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineLoadInfo__" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetDataLocationContents(MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo})">
+  GetDataLocationContents(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataLocationContentResult&lt;GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt; GetDataLocationContents(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt; context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext-4.html">DataLocationConnectorContext</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.DataLocationContentResult-3.html">DataLocationContentResult</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetRelatedContents_" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetRelatedContents*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_GitlabPipelineApiConnector_GetRelatedContents_MES_MQC_DataSourceLibrary_Context_DataLocationConnectorContext_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Forms_GitlabPipelineDataLocationForm_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineLoadInfo__MES_MQC_DataSourceLibrary_Models_Connectors_FileContent_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabLocation_MES_MQC_DataSourceLibrary_Adapters_Apis_Gitlab_Contents_GitlabPipelineIdentifier__MES_MQC_DataSourceLibrary_Models_Connectors_RelatedContentRequest___" data-uid="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabPipelineApiConnector.GetRelatedContents(MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo},MES.MQC.DataSourceLibrary.Models.Connectors.FileContent{MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation,MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier},MES.MQC.DataSourceLibrary.Models.Connectors.RelatedContentRequest[])">
+  GetRelatedContents(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt;, FileContent&lt;GitlabLocation, GitlabPipelineIdentifier&gt;, RelatedContentRequest[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFileContent[] GetRelatedContents(DataLocationConnectorContext&lt;GitlabPipelineDataLocationForm, GitlabLocation, GitlabPipelineIdentifier, GitlabPipelineLoadInfo&gt; context, FileContent&lt;GitlabLocation, GitlabPipelineIdentifier&gt; content, RelatedContentRequest[] relatedContentRequests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.DataLocationConnectorContext-4.html">DataLocationConnectorContext</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Forms.GitlabPipelineDataLocationForm.html">GitlabPipelineDataLocationForm</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineLoadInfo.html">GitlabPipelineLoadInfo</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.FileContent-2.html">FileContent</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabLocation.html">GitlabLocation</a>, <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.Contents.GitlabPipelineIdentifier.html">GitlabPipelineIdentifier</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>relatedContentRequests</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.RelatedContentRequest.html">RelatedContentRequest</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.Interfaces.IFileContent.html">IFileContent</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

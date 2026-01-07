@@ -102,7 +102,7 @@ Class FileReader
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class FileReader : AdapterBase</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class FileReader : DataAdapterBase</code></pre>
   </div>
 
 
@@ -113,6 +113,7 @@ Class FileReader
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html">AdapterBase</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html">DataAdapterBase</a></div>
       <div><span class="xref">FileReader</span></div>
     </dd>
   </dl>
@@ -121,7 +122,6 @@ Class FileReader
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Adapter.html">Adapter</a></div>
       <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Files.AstreeXmlFileReader.html">AstreeXmlFileReader</a></div>
       <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Files.CodeClimateJsonFileReader.html">CodeClimateJsonFileReader</a></div>
       <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Files.DataTemplateFileReader.html">DataTemplateFileReader</a></div>
@@ -157,31 +157,25 @@ Class FileReader
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_DataSource">DataAdapterBase.DataSource</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_TransformStringToValue_System_String_">DataAdapterBase.TransformStringToValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_TransformStringToDateTime_System_String_">DataAdapterBase.TransformStringToDateTime(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_ThrowWarningForEmptyDataProperty_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterDataBase_MES_MQC_DataSourceLibrary_Context_ContextBase_System_String_System_String_">DataAdapterBase.ThrowWarningForEmptyDataProperty(AdapterDataBase, ContextBase, string, string)</a>
+    </div>
+    <div>
       <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Name">AdapterBase.Name</a>
     </div>
     <div>
       <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Description">AdapterBase.Description</a>
     </div>
     <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_DataSource">AdapterBase.DataSource</a>
-    </div>
-    <div>
       <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Options">AdapterBase.Options</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToValue_System_String_">AdapterBase.TransformStringToValue(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_System_String_">AdapterBase.TransformStringToDateTime(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_MES_MQC_DataSourceLibrary_Adapters_AdapterContext_System_String_">AdapterBase.TransformStringToDateTime(AdapterContext, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ThrowWarningForEmptyDataProperty_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterDataBase_MES_MQC_DataSourceLibrary_Adapters_AdapterContextBase_System_String_System_String_">AdapterBase.ThrowWarningForEmptyDataProperty(AdapterDataBase, AdapterContextBase, string, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ReadFilePathsInZipFile_System_String_">AdapterBase.ReadFilePathsInZipFile(string)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -314,10 +308,10 @@ The IsValid method is not called unless the file extension matches.</p>
 
 
 
-  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_HumanReadableStartFileNames_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.HumanReadableStartFileNames*"></a>
+  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_HumanReadableRegexFileNames_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.HumanReadableRegexFileNames*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_HumanReadableStartFileNames" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.HumanReadableStartFileNames">
-  HumanReadableStartFileNames
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_HumanReadableRegexFileNames" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.HumanReadableRegexFileNames">
+  HumanReadableRegexFileNames
   
   </h3>
 
@@ -326,7 +320,7 @@ The IsValid method is not called unless the file extension matches.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual List&lt;string&gt; HumanReadableStartFileNames { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual List&lt;string&gt; HumanReadableRegexFileNames { get; }</code></pre>
   </div>
 
 
@@ -416,14 +410,45 @@ If this is false the ReportDateTime is the CreationDate of the file without a wa
 
 
 
+  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Version_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Version*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Version" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Version">
+  Version
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Version Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.version">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
 
   <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Execute_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Execute*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Execute_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_System_Boolean_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Execute(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext,System.Boolean)">
-  Execute(FileReaderContext, bool)
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Execute_MES_MQC_DataSourceLibrary_Context_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Execute(MES.MQC.DataSourceLibrary.Context.FileReaderContext)">
+  Execute(FileReaderContext)
   
   </h3>
 
@@ -432,16 +457,13 @@ If this is false the ReportDateTime is the CreationDate of the file without a wa
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FileReaderResult Execute(FileReaderContext context, bool useFileCreationTime = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public FileReaderResult Execute(FileReaderContext context)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
     <dd><p>FileReaderContext</p>
-</dd>
-    <dt><code>useFileCreationTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Should the file creationTime always be used as the report date time?</p>
 </dd>
   </dl>
 
@@ -462,52 +484,10 @@ If this is false the ReportDateTime is the CreationDate of the file without a wa
 
 
 
-  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetHumanReadableFilePath_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetHumanReadableFilePath*"></a>
+  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetHumanReadableContents_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetHumanReadableContents*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetHumanReadableFilePath_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetHumanReadableFilePath(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
-  GetHumanReadableFilePath(FileReaderContext)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Get the human-readable file path.
-Can be overridden with a user defined function.
-Can be used together with GetHumanReadableFilePaths,
-but it is recommended to only use one of the methods.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetHumanReadableFilePath(FileReaderContext context)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
-    <dd><p>FileReaderContext</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Human readable file</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetHumanReadableFilePaths_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetHumanReadableFilePaths*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetHumanReadableFilePaths_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetHumanReadableFilePaths(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
-  GetHumanReadableFilePaths(FileReaderContext)
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetHumanReadableContents_MES_MQC_DataSourceLibrary_Context_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetHumanReadableContents(MES.MQC.DataSourceLibrary.Context.FileReaderContext)">
+  GetHumanReadableContents(FileReaderContext)
   
   </h3>
 
@@ -519,19 +499,19 @@ but it is recommended to only use one of the methods.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual List&lt;string&gt; GetHumanReadableFilePaths(FileReaderContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual List&lt;IFileContent&gt; GetHumanReadableContents(FileReaderContext context)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
     <dd><p>FileReaderContext</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.Interfaces.IFileContent.html">IFileContent</a>&gt;</dt>
     <dd><p>List of human readable files</p>
 </dd>
   </dl>
@@ -546,9 +526,81 @@ but it is recommended to only use one of the methods.</p>
 
 
 
+  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetRelatedContentRequests_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetRelatedContentRequests*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetRelatedContentRequests_MES_MQC_DataSourceLibrary_Context_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetRelatedContentRequests(MES.MQC.DataSourceLibrary.Context.FileReaderContext)">
+  GetRelatedContentRequests(FileReaderContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;RelatedContentRequest&gt; GetRelatedContentRequests(FileReaderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.RelatedContentRequest.html">RelatedContentRequest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetRelatedContentRequestsFromOptions_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetRelatedContentRequestsFromOptions*"></a>
+
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_GetRelatedContentRequestsFromOptions_MES_MQC_DataSourceLibrary_Context_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.GetRelatedContentRequestsFromOptions(MES.MQC.DataSourceLibrary.Context.FileReaderContext)">
+  GetRelatedContentRequestsFromOptions(FileReaderContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;RelatedContentRequest&gt; GetRelatedContentRequestsFromOptions(FileReaderContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Connectors.RelatedContentRequest.html">RelatedContentRequest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_IsValid_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.IsValid*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_IsValid_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.IsValid(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_IsValid_MES_MQC_DataSourceLibrary_Context_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.IsValid(MES.MQC.DataSourceLibrary.Context.FileReaderContext)">
   IsValid(FileReaderContext)
   
   </h3>
@@ -568,7 +620,7 @@ No other adapter is checked afterward.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
     <dd><p>FileReaderContext</p>
 </dd>
   </dl>
@@ -592,7 +644,7 @@ No other adapter is checked afterward.</p>
 
   <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Read_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Read*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Read_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Read(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Read_MES_MQC_DataSourceLibrary_Context_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Read(MES.MQC.DataSourceLibrary.Context.FileReaderContext)">
   Read(FileReaderContext)
   
   </h3>
@@ -609,7 +661,7 @@ The data of the file should be read and returned as a AdapterReadResult.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
     <dd><p>FileReaderContext</p>
 </dd>
   </dl>
@@ -631,41 +683,35 @@ The data of the file should be read and returned as a AdapterReadResult.</p>
 
 
 
-  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_ReadWithHumanReadableFiles_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.ReadWithHumanReadableFiles*"></a>
+  <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_TransformStringToDateTime_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.TransformStringToDateTime*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_ReadWithHumanReadableFiles_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterReadResult_System_Collections_Generic_IEnumerable_System_String__" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.ReadWithHumanReadableFiles(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext,MES.MQC.DataSourceLibrary.Models.Adapters.AdapterReadResult,System.Collections.Generic.IEnumerable{System.String})">
-  ReadWithHumanReadableFiles(FileReaderContext, AdapterReadResult, IEnumerable&lt;string&gt;)
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_TransformStringToDateTime_MES_MQC_DataSourceLibrary_Context_FileReaderContext_System_String_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.TransformStringToDateTime(MES.MQC.DataSourceLibrary.Context.FileReaderContext,System.String)">
+  TransformStringToDateTime(FileReaderContext, string)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>ReadWithHumanReadableFiles can be implemented by the Adapter class.
-This method is called after the Read method, it contains not only the context but also the
-AdapterReadResult of the Read method and the detected and/or configured HumanReadableFilePaths.
-The AdapterReadResult can be extended and has to be returned fully.</p>
+  <div class="markdown level1 summary"><p>This method is deprecated, use <pre><code class="lang-csharp">TransformStringToDateTime(value)</code></pre> instead
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual AdapterReadResult ReadWithHumanReadableFiles(FileReaderContext context, AdapterReadResult adapterReadResult, IEnumerable&lt;string&gt; humanReadableFilePaths)</code></pre>
+    <pre><code class="lang-csharp hljs">protected DateTime TransformStringToDateTime(FileReaderContext context, string value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
     <dd><p>FileReaderContext</p>
 </dd>
-    <dt><code>adapterReadResult</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterReadResult.html">AdapterReadResult</a></dt>
-    <dd><p>AdapterReadResult</p>
-</dd>
-    <dt><code>humanReadableFilePaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>Loaded human readable file paths</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Date as string</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterReadResult.html">AdapterReadResult</a></dt>
-    <dd><p>AdapterReadResult</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Datetime transformed from the string or the creation date, if string was not a valid datetime</p>
 </dd>
   </dl>
 
@@ -681,7 +727,7 @@ The AdapterReadResult can be extended and has to be returned fully.</p>
 
   <a id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Validate_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Validate*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Validate_MES_MQC_DataSourceLibrary_Adapters_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Validate(MES.MQC.DataSourceLibrary.Adapters.FileReaderContext)">
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_FileReader_Validate_MES_MQC_DataSourceLibrary_Context_FileReaderContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.FileReader.Validate(MES.MQC.DataSourceLibrary.Context.FileReaderContext)">
   Validate(FileReaderContext)
   
   </h3>
@@ -696,7 +742,7 @@ The AdapterReadResult can be extended and has to be returned fully.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReaderContext.html">FileReaderContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Context.FileReaderContext.html">FileReaderContext</a></dt>
     <dd><p>FileReaderContext</p>
 </dd>
   </dl>

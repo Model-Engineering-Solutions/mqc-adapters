@@ -120,7 +120,6 @@ Class AdapterResultBase
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.ApiConnectorResult.html">ApiConnectorResult</a></div>
       <div><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.FileReaderResult.html">FileReaderResult</a></div>
     </dd>
   </dl>
@@ -186,37 +185,6 @@ Class AdapterResultBase
 
 
 
-  <a id="MES_MQC_DataSourceLibrary_Models_Adapters_AdapterResultBase__ctor_" data-uid="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterResultBase.#ctor*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Models_Adapters_AdapterResultBase__ctor_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterMessageBag_" data-uid="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterResultBase.#ctor(MES.MQC.DataSourceLibrary.Models.Adapters.AdapterMessageBag)">
-  AdapterResultBase(AdapterMessageBag)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AdapterResultBase(AdapterMessageBag messageBag)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>messageBag</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterMessageBag.html">AdapterMessageBag</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -232,7 +200,7 @@ Class AdapterResultBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ImportedData&gt; Data { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;ExtractedData&gt; Data { get; set; }</code></pre>
   </div>
 
 
@@ -241,7 +209,7 @@ Class AdapterResultBase
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Data.ImportedData.html">ImportedData</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Extraction.ExtractedData.html">ExtractedData</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -263,7 +231,7 @@ Class AdapterResultBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ImportedFinding&gt; Findings { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;ExtractedFinding&gt; Findings { get; set; }</code></pre>
   </div>
 
 
@@ -272,7 +240,7 @@ Class AdapterResultBase
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Data.ImportedFinding.html">ImportedFinding</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Extraction.ExtractedFinding.html">ExtractedFinding</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -294,7 +262,7 @@ Class AdapterResultBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ImportedMeasure&gt; Measures { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;ExtractedMeasure&gt; Measures { get; set; }</code></pre>
   </div>
 
 
@@ -303,7 +271,7 @@ Class AdapterResultBase
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Data.ImportedMeasure.html">ImportedMeasure</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MES.MQC.DataSourceLibrary.Models.Extraction.ExtractedMeasure.html">ExtractedMeasure</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -325,7 +293,7 @@ Class AdapterResultBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AdapterMessageBag MessageBag { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public MessageBag MessageBag { get; set; }</code></pre>
   </div>
 
 
@@ -334,7 +302,7 @@ Class AdapterResultBase
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterMessageBag.html">AdapterMessageBag</a></dt>
+    <dt><a class="xref" href="MES.MQC.UtilityLibrary.Messages.MessageBag.html">MessageBag</a></dt>
     <dd></dd>
   </dl>
 

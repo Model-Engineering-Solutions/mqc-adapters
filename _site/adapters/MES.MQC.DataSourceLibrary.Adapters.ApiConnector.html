@@ -102,7 +102,7 @@ Class ApiConnector
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ApiConnector : AdapterBase, IFormProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ApiConnector : DataAdapterBase, IFormAdapter</code></pre>
   </div>
 
 
@@ -113,6 +113,7 @@ Class ApiConnector
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html">AdapterBase</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html">DataAdapterBase</a></div>
       <div><span class="xref">ApiConnector</span></div>
     </dd>
   </dl>
@@ -120,21 +121,32 @@ Class ApiConnector
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="MES.MQC.UtilityLibrary.Form.IFormProvider.html">IFormProvider</a></div>
+      <div><a class="xref" href="MES.MQC.UtilityLibrary.Form.Interfaces.IFormAdapter.html">IFormAdapter</a></div>
     </dd>
   </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.GitlabApiConnector.html">GitlabApiConnector</a></div>
-      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.JenkinsPipelineArtifactsApiConnector.html">JenkinsPipelineArtifactsApiConnector</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Gitlab.GitlabApiConnectorBase.html">GitlabApiConnectorBase</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Jenkins.JenkinsPipelineApiConnector.html">JenkinsPipelineApiConnector</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Jfrog.JfrogArtifactoryArtifactsApiConnector.html">JfrogArtifactoryArtifactsApiConnector</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.Apis.Jira.JiraIssueApiConnector.html">JiraIssueApiConnector</a></div>
     </dd>
   </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_TransformStringToValue_System_String_">DataAdapterBase.TransformStringToValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_TransformStringToDateTime_System_String_">DataAdapterBase.TransformStringToDateTime(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_DataAdapterBase_ThrowWarningForEmptyDataProperty_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterDataBase_MES_MQC_DataSourceLibrary_Context_ContextBase_System_String_System_String_">DataAdapterBase.ThrowWarningForEmptyDataProperty(AdapterDataBase, ContextBase, string, string)</a>
+    </div>
     <div>
       <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Name">AdapterBase.Name</a>
     </div>
@@ -143,21 +155,6 @@ Class ApiConnector
     </div>
     <div>
       <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Options">AdapterBase.Options</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToValue_System_String_">AdapterBase.TransformStringToValue(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_System_String_">AdapterBase.TransformStringToDateTime(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_MES_MQC_DataSourceLibrary_Adapters_AdapterContext_System_String_">AdapterBase.TransformStringToDateTime(AdapterContext, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ThrowWarningForEmptyDataProperty_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterDataBase_MES_MQC_DataSourceLibrary_Adapters_AdapterContextBase_System_String_System_String_">AdapterBase.ThrowWarningForEmptyDataProperty(AdapterDataBase, AdapterContextBase, string, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.html#MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ReadFilePathsInZipFile_System_String_">AdapterBase.ReadFilePathsInZipFile(string)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -230,300 +227,41 @@ DataSource should be &quot;Undefined&quot;, if only files are downloaded.</p>
 </h2>
 
 
-  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_CheckAvailable_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.CheckAvailable*"></a>
+  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_ExecuteCachedInForm_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.ExecuteCachedInForm*"></a>
 
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_CheckAvailable_MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.CheckAvailable(MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext)">
-  CheckAvailable(ApiConnectorContext)
+  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_ExecuteCachedInForm__1_MES_MQC_UtilityLibrary_Form_Interfaces_IFormContext_MES_MQC_UtilityLibrary_Form_Models_Form__System_Object___System_Func___0__" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.ExecuteCachedInForm``1(MES.MQC.UtilityLibrary.Form.Interfaces.IFormContext{MES.MQC.UtilityLibrary.Form.Models.Form},System.Object[],System.Func{``0})">
+  ExecuteCachedInForm&lt;T&gt;(IFormContext&lt;Form&gt;, object[], Func&lt;T&gt;)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>CheckAvailable must be implemented by the Api Adapter class.
-This method is called to show a warning for configured but unavailable data sources in the UI.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract bool CheckAvailable(ApiConnectorContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">protected T ExecuteCachedInForm&lt;T&gt;(IFormContext&lt;Form&gt; context, object[] arguments, Func&lt;T&gt; lambda)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.html">ApiConnectorContext</a></dt>
-    <dd><p>ApiConnectorContext</p>
-</dd>
+    <dt><code>context</code> <a class="xref" href="MES.MQC.UtilityLibrary.Form.Interfaces.IFormContext-1.html">IFormContext</a>&lt;<a class="xref" href="MES.MQC.UtilityLibrary.Form.Models.Form.html">Form</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+    <dt><code>lambda</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>boolean (is the api available/accessible)</p>
-</dd>
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
   </dl>
 
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_CheckModified_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.CheckModified*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_CheckModified_MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.CheckModified(MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext)">
-  CheckModified(ApiConnectorContext)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>CheckModified must be implemented by the Api Adapter class.
-This method is called by the local and server side monitoring,
-to check if the data sources should be updated.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract bool CheckModified(ApiConnectorContext context)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
+  <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.html">ApiConnectorContext</a></dt>
-    <dd><p>ApiConnectorContext</p>
-</dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>boolean (are there any changes)</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_ConfigureForm_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.ConfigureForm*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_ConfigureForm_MES_MQC_UtilityLibrary_Form_IForm_System_String___" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.ConfigureForm(MES.MQC.UtilityLibrary.Form.IForm,System.String[])">
-  ConfigureForm(IForm, string[])
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>ConfigureForm can be implemented by an API adapter.
-It is used to modify the FormSchema of the Add/Edit DataSource dialog for the
-AdapterConfiguration depending on the values entered
-(e.g. to make options or input fields visible and/or deactivate them based on a correct API request).
-It is called for the initial creation of the FormSchema with all fields as modified and when
-a field that was enabled by RefreshOnModified has been changed by the user.
-This method should also validate the configuration, not if the schema is valid, but if the
-values are usable (e.g. if the api is accessible and the authentification is valid).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual FormError[] ConfigureForm(IForm form, string[] modifiedFields)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>form</code> <a class="xref" href="MES.MQC.UtilityLibrary.Form.IForm.html">IForm</a></dt>
-    <dd><p>IForm, the AdapterConfiguration</p>
-</dd>
-    <dt><code>modifiedFields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Array of the modified fields as string
-(Form-Subfields as field.field or field.index.field)</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MES.MQC.UtilityLibrary.Form.FormError.html">FormError</a>[]</dt>
-    <dd><p>Array of FormError, if a validation failed</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_Download_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.Download*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_Download_MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.Download(MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext)">
-  Download(ApiConnectorContext)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Download can be implemented by the Api Adapter class.
-At least one of Download and Read must be implemented.
-The implementation of this method should access the configured API, download and save files
-to the context.DownloadPath directory and return a AdapterDownloadResult.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual AdapterDownloadResult Download(ApiConnectorContext context)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.html">ApiConnectorContext</a></dt>
-    <dd><p>ApiConnectorContext</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterDownloadResult.html">AdapterDownloadResult</a></dt>
-    <dd><p>AdapterDownloadResult</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_Execute_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.Execute*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_Execute_MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.Execute(MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext)">
-  Execute(ApiConnectorContext)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Internal method</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ApiConnectorResult Execute(ApiConnectorContext context)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.html">ApiConnectorContext</a></dt>
-    <dd><p>ApiConnectorContext</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.ApiConnectorResult.html">ApiConnectorResult</a></dt>
-    <dd><p>ApiConnectorResult</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_PreviewForm_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.PreviewForm*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_PreviewForm_MES_MQC_UtilityLibrary_Form_IForm_System_String_System_Int32__" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.PreviewForm(MES.MQC.UtilityLibrary.Form.IForm,System.String,System.Int32@)">
-  PreviewForm(IForm, string, out int)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>PreviewForm can be implemented by an API Connector.
-It is used to load the Preview, if one was defined in the AdapterConfiguration.
-Based on the focused form field, the Preview is shown in the Dialog and provides the ability to load
-by clicking on a button. This button click calls this method.
-Based on the configuration and the preview type, the api should load the relevant data,
-limited to ~100 for better performance, and a array of FormPreview should be returned.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual FormPreview[] PreviewForm(IForm form, string preview, out int totalCount)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>form</code> <a class="xref" href="MES.MQC.UtilityLibrary.Form.IForm.html">IForm</a></dt>
-    <dd><p>IForm, the AdapterConfiguration</p>
-</dd>
-    <dt><code>preview</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The preview type (string)</p>
-</dd>
-    <dt><code>totalCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>Output of totalCount, if 0 shown as ? in the preview dialog</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MES.MQC.UtilityLibrary.Form.FormPreview.html">FormPreview</a>[]</dt>
-    <dd><p>Array of FormPreview, to show Title and optionally Description and DateTime</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_Read_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.Read*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_ApiConnector_Read_MES_MQC_DataSourceLibrary_Adapters_ApiConnectorContext_" data-uid="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.Read(MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext)">
-  Read(ApiConnectorContext)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Read can be implemented by the Api Adapter class.
-At least one of Download and Read must be implemented.
-The implementation of this method should access the configured API, create AdapterData,
-AdapterMeasures and/or AdapterFindings and return a AdapterReadResult.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual AdapterReadResult Read(ApiConnectorContext context)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnectorContext.html">ApiConnectorContext</a></dt>
-    <dd><p>ApiConnectorContext</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterReadResult.html">AdapterReadResult</a></dt>
-    <dd><p>AdapterReadResult</p>
-</dd>
-  </dl>
-
 
 
 

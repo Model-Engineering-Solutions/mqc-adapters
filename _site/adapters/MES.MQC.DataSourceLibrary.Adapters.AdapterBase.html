@@ -120,8 +120,7 @@ Class AdapterBase
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.ApiConnector.html">ApiConnector</a></div>
-      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.FileReader.html">FileReader</a></div>
+      <div><a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.DataAdapterBase.html">DataAdapterBase</a></div>
     </dd>
   </dl>
 
@@ -158,40 +157,6 @@ Class AdapterBase
 
   <h2 class="section" id="properties">Properties
 </h2>
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_DataSource_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.DataSource*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_DataSource" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.DataSource">
-  DataSource
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>The Data Source of the Adapter.
-If a report file contains data from multiple data sources, this property has to be to &quot;Unknown&quot; and
-the DataSource of each AdapterData object has to be defined.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual string DataSource { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
 
 
   <a id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_Description_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.Description*"></a>
@@ -239,7 +204,7 @@ HTML tags are not allowed.</p>
   </h3>
 
   <div class="markdown level1 summary"><p>Unique Name of the Adapter.
-Defaults to the ClassName (without Adapter / FileReader / ApiConnector suffix),
+Defaults to the ClassName (without Adapter / FileReader / ApiConnector / Connector suffix),
 can be overridden with a user defined Name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -289,203 +254,6 @@ can be overridden with a user defined Name.</p>
     <dt><span class="xref">AdapterOptions</span></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ReadFilePathsInZipFile_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.ReadFilePathsInZipFile*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ReadFilePathsInZipFile_System_String_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.ReadFilePathsInZipFile(System.String)">
-  ReadFilePathsInZipFile(string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;string&gt; ReadFilePathsInZipFile(string zipFilePath)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>zipFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ThrowWarningForEmptyDataProperty_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.ThrowWarningForEmptyDataProperty*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_ThrowWarningForEmptyDataProperty_MES_MQC_DataSourceLibrary_Models_Adapters_AdapterDataBase_MES_MQC_DataSourceLibrary_Adapters_AdapterContextBase_System_String_System_String_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.ThrowWarningForEmptyDataProperty(MES.MQC.DataSourceLibrary.Models.Adapters.AdapterDataBase,MES.MQC.DataSourceLibrary.Adapters.AdapterContextBase,System.String,System.String)">
-  ThrowWarningForEmptyDataProperty(AdapterDataBase, AdapterContextBase, string, string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ThrowWarningForEmptyDataProperty(AdapterDataBase adapterDataBase, AdapterContextBase context, string propertyName, string value)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>adapterDataBase</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Models.Adapters.AdapterDataBase.html">AdapterDataBase</a></dt>
-    <dd></dd>
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterContextBase.html">AdapterContextBase</a></dt>
-    <dd></dd>
-    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.TransformStringToDateTime*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_MES_MQC_DataSourceLibrary_Adapters_AdapterContext_System_String_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.TransformStringToDateTime(MES.MQC.DataSourceLibrary.Adapters.AdapterContext,System.String)">
-  TransformStringToDateTime(AdapterContext, string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>This method is deprecated, use <pre><code class="lang-csharp">TransformStringToDateTime(value)</code></pre> instead
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected DateTime TransformStringToDateTime(AdapterContext context, string value)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>context</code> <a class="xref" href="MES.MQC.DataSourceLibrary.Adapters.AdapterContext.html">AdapterContext</a></dt>
-    <dd><p>AdapterContext</p>
-</dd>
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Date as string</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
-    <dd><p>Datetime transformed from the string or the creation date, if string was not a valid datetime</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.TransformStringToDateTime*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToDateTime_System_String_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.TransformStringToDateTime(System.String)">
-  TransformStringToDateTime(string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>TransformStringToValue is a Utility method.
-Parse a string value to a DateTime.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected DateTime? TransformStringToDateTime(string value)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Date as string</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>Datetime transformed from the string or null, if string was not a valid datetime</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToValue_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.TransformStringToValue*"></a>
-
-  <h3 id="MES_MQC_DataSourceLibrary_Adapters_AdapterBase_TransformStringToValue_System_String_" data-uid="MES.MQC.DataSourceLibrary.Adapters.AdapterBase.TransformStringToValue(System.String)">
-  TransformStringToValue(string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>TransformStringToValue is a Utility method.
-Parse a string value to a double value in a culture independent (invariant) way.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static double? TransformStringToValue(string value)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
 
 
 
